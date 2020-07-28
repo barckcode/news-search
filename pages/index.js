@@ -5,7 +5,10 @@ import { Global, css } from '@emotion/core'
 import Header from '../components/Header'
 
 
-const Home = () => {
+const Home = ({ data }) => {
+
+  console.log(data)
+
   return (
     <>
       <Head>
@@ -36,6 +39,17 @@ const Home = () => {
       />
     </>
   )
+}
+
+export async function getServerSideProps() {
+  const res = await fetch(`https://newsapi.org/v2/everything?q=tecnolog%C3%ADa&language=es&apiKey=${process.env.API_KEY}`)
+  const data = await res.json()
+
+  return {
+    props: {
+      data
+    }
+  }
 }
 
 export default Home
