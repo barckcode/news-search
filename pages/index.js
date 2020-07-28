@@ -3,11 +3,12 @@ import { Global, css } from '@emotion/core'
 
 // Components:
 import Header from '../components/Header'
+import CardArticle from '../components/CardArticle'
 
 
 const Home = ({ data }) => {
 
-  console.log(data)
+  const { status, articles } = data
 
   return (
     <>
@@ -18,6 +19,10 @@ const Home = ({ data }) => {
       </Head>
 
       <Header />
+
+      <CardArticle
+        articles={articles}
+      />
 
       <Global
         styles={css`
