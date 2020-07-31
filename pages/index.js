@@ -4,6 +4,7 @@ import { Global, css } from '@emotion/core'
 // Components:
 import Header from '../components/Header'
 import CardArticle from '../components/CardArticle'
+import Searcher from '../components/Searcher'
 
 
 const Home = ({ data }) => {
@@ -19,6 +20,8 @@ const Home = ({ data }) => {
       </Head>
 
       <Header />
+
+      <Searcher />
 
       <CardArticle
         articles={articles}

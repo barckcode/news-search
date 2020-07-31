@@ -7,7 +7,8 @@ const ArticlesContainer = styled.main`
 const Article = styled.article`
 	margin-top: 2rem;
 	border-radius: 20px;
-	background-color: #ece9f7;
+	background-color: #f4f1ff;
+	box-shadow: 4px 4px 20px 0px #bfbfbf;
 `
 
 const Image = styled.img`
