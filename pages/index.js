@@ -37,6 +37,8 @@ const Home = ({ data }) => {
           }
 
           body {
+            margin: 0 auto;
+            max-width: 2000px;
             color: #120136;
           }
 

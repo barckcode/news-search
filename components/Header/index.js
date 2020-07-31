@@ -8,14 +8,14 @@ const Header = () => {
 		<HeaderComponent>
 			<h1>Search News</h1>
 
-			<nav>
+			{/* <nav>
 				<Button>
 					🇪🇸
 				</Button>
 				<Button>
 					🇺🇸
 				</Button>
-			</nav>
+			</nav> */}
 		</HeaderComponent>
 	)
 }

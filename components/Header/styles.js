@@ -4,7 +4,7 @@ const HeaderComponent = styled.header`
   padding: 2rem 2rem 0 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 `
 
 const Button = styled.button`
